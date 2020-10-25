@@ -328,4 +328,14 @@ class TestHorlogeDeBerlin extends TestCase
     private function display_generic_hours($hours): string {
         return $this->horlogeDeBerlin->display_simple_hours($hours);
     }
+
+    public function test_display_given0Hour_shouldReturnNothing()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_5_by_5_hours(0);
+        //assert
+        $this->assertEquals("",$actual);
+    }
 }
