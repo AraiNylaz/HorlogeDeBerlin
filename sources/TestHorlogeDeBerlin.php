@@ -369,7 +369,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_hours(0);
+        $actual = $this->display_generic_5_by_5_hours(0);
         //assert
         $this->assertEquals("", $actual);
     }
@@ -379,7 +379,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_hours(5);
+        $actual = $this->display_generic_5_by_5_hours(5);
         //assert
         $this->assertEquals("[5hours]", $actual);
     }
@@ -389,7 +389,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_hours(10);
+        $actual = $this->display_generic_5_by_5_hours(10);
         //assert
         $this->assertEquals("[5hours][10hours]", $actual);
     }
@@ -399,7 +399,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_hours(15);
+        $actual = $this->display_generic_5_by_5_hours(15);
         //assert
         $this->assertEquals("[5hours][10hours][15hours]", $actual);
     }
@@ -408,8 +408,13 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_hours(20);
+        $actual = $this->display_generic_5_by_5_hours(20);
         //assert
         $this->assertEquals("[5hours][10hours][15hours][20hours]", $actual);
+    }
+
+    private function display_generic_5_by_5_hours($hours): string
+    {
+        return $this->horlogeDeBerlin->display_5_by_5_hours($hours);
     }
 }

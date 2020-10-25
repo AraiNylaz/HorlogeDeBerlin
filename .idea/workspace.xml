@@ -20,7 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0a4078f0-dc2d-4892-bcfd-080dd7959bbe" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/sources/HorlogeDeBerlin.php" beforeDir="false" afterPath="$PROJECT_DIR$/sources/HorlogeDeBerlin.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/sources/TestHorlogeDeBerlin.php" beforeDir="false" afterPath="$PROJECT_DIR$/sources/TestHorlogeDeBerlin.php" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -121,7 +123,7 @@
       <workItem from="1603533099350" duration="996000" />
       <workItem from="1603554773822" duration="101000" />
       <workItem from="1603564199678" duration="474000" />
-      <workItem from="1603615835085" duration="12952000" />
+      <workItem from="1603615835085" duration="15431000" />
     </task>
     <task id="LOCAL-00001" summary="add test and method for 2 minutes">
       <created>1603629700797</created>
@@ -326,7 +328,126 @@
       <option name="project" value="LOCAL" />
       <updated>1603638214129</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="add method and test for 2 hours">
+      <created>1603638370019</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1603638370019</updated>
+    </task>
+    <task id="LOCAL-00031" summary="add method and test for 3 hours">
+      <created>1603638496863</created>
+      <option name="number" value="00031" />
+      <option name="presentableId" value="LOCAL-00031" />
+      <option name="project" value="LOCAL" />
+      <updated>1603638496863</updated>
+    </task>
+    <task id="LOCAL-00032" summary="add method and test for 4 hours">
+      <created>1603638592113</created>
+      <option name="number" value="00032" />
+      <option name="presentableId" value="LOCAL-00032" />
+      <option name="project" value="LOCAL" />
+      <updated>1603638592113</updated>
+    </task>
+    <task id="LOCAL-00033" summary="add method and test for 5 hours">
+      <created>1603638856227</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1603638856227</updated>
+    </task>
+    <task id="LOCAL-00034" summary="add method and test for 6 hours">
+      <created>1603638941398</created>
+      <option name="number" value="00034" />
+      <option name="presentableId" value="LOCAL-00034" />
+      <option name="project" value="LOCAL" />
+      <updated>1603638941398</updated>
+    </task>
+    <task id="LOCAL-00035" summary="add method and test for 6 hours">
+      <created>1603639011159</created>
+      <option name="number" value="00035" />
+      <option name="presentableId" value="LOCAL-00035" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639011159</updated>
+    </task>
+    <task id="LOCAL-00036" summary="add method and test for 8 hours">
+      <created>1603639084038</created>
+      <option name="number" value="00036" />
+      <option name="presentableId" value="LOCAL-00036" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639084038</updated>
+    </task>
+    <task id="LOCAL-00037" summary="add method and test for 9 hours">
+      <created>1603639211844</created>
+      <option name="number" value="00037" />
+      <option name="presentableId" value="LOCAL-00037" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639211844</updated>
+    </task>
+    <task id="LOCAL-00038" summary="add method and test for 10 hours">
+      <created>1603639299945</created>
+      <option name="number" value="00038" />
+      <option name="presentableId" value="LOCAL-00038" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639299945</updated>
+    </task>
+    <task id="LOCAL-00039" summary="modify specified method into generic method 2 (hour handling)">
+      <created>1603639455398</created>
+      <option name="number" value="00039" />
+      <option name="presentableId" value="LOCAL-00039" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639455398</updated>
+    </task>
+    <task id="LOCAL-00040" summary="refactoring method for better code visibility 3">
+      <created>1603639642808</created>
+      <option name="number" value="00040" />
+      <option name="presentableId" value="LOCAL-00040" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639642808</updated>
+    </task>
+    <task id="LOCAL-00041" summary="refactoring method for better code visibility 3">
+      <created>1603639956935</created>
+      <option name="number" value="00041" />
+      <option name="presentableId" value="LOCAL-00041" />
+      <option name="project" value="LOCAL" />
+      <updated>1603639956935</updated>
+    </task>
+    <task id="LOCAL-00042" summary="add method &quot;5 by 5&quot; for input 5 (hour handling)">
+      <created>1603640190205</created>
+      <option name="number" value="00042" />
+      <option name="presentableId" value="LOCAL-00042" />
+      <option name="project" value="LOCAL" />
+      <updated>1603640190205</updated>
+    </task>
+    <task id="LOCAL-00043" summary="add method &quot;5 by 5&quot; for input 10 (hour handling)">
+      <created>1603640287907</created>
+      <option name="number" value="00043" />
+      <option name="presentableId" value="LOCAL-00043" />
+      <option name="project" value="LOCAL" />
+      <updated>1603640287907</updated>
+    </task>
+    <task id="LOCAL-00044" summary="add method &quot;5 by 5&quot; for input 15 (hour handling)">
+      <created>1603640362284</created>
+      <option name="number" value="00044" />
+      <option name="presentableId" value="LOCAL-00044" />
+      <option name="project" value="LOCAL" />
+      <updated>1603640362284</updated>
+    </task>
+    <task id="LOCAL-00045" summary="add method &quot;5 by 5&quot; for input 20 (hour handling)">
+      <created>1603640501832</created>
+      <option name="number" value="00045" />
+      <option name="presentableId" value="LOCAL-00045" />
+      <option name="project" value="LOCAL" />
+      <updated>1603640501832</updated>
+    </task>
+    <task id="LOCAL-00046" summary="modify specified method into generic method 3 (5 by 5 hours handling)">
+      <created>1603640576943</created>
+      <option name="number" value="00046" />
+      <option name="presentableId" value="LOCAL-00046" />
+      <option name="project" value="LOCAL" />
+      <updated>1603640576943</updated>
+    </task>
+    <option name="localTasksCounter" value="47" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -344,21 +465,6 @@
     </option>
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="add test and method for 4 minutes" />
-    <MESSAGE value="add test and method for 5 minutes" />
-    <MESSAGE value="add test and method for 6 minutes" />
-    <MESSAGE value="add test and method for 7 minutes" />
-    <MESSAGE value="add test and method for 8 minutes" />
-    <MESSAGE value="add test and method for 9 minutes" />
-    <MESSAGE value="add test and method for 10 minutes" />
-    <MESSAGE value="add test and method for 11 minutes --&gt; generic method" />
-    <MESSAGE value="refactoring method for better code visibility" />
-    <MESSAGE value="add method &quot;5 by 5&quot; for input 5" />
-    <MESSAGE value="add method &quot;5 by 5&quot; for input 10" />
-    <MESSAGE value="add method &quot;5 by 5&quot; for input 15" />
-    <MESSAGE value="add method &quot;5 by 5&quot; for input 20" />
-    <MESSAGE value="add method &quot;5 by 5&quot; for input 25" />
-    <MESSAGE value="add method &quot;5 by 5&quot; for input 30" />
     <MESSAGE value="add method &quot;5 by 5&quot; for input 35" />
     <MESSAGE value="add method &quot;5 by 5&quot; for input 40" />
     <MESSAGE value="add method &quot;5 by 5&quot; for input 45" />
@@ -369,7 +475,22 @@
     <MESSAGE value="refactoring method for better code visibility 2" />
     <MESSAGE value="add method and test for 1 hour" />
     <MESSAGE value="modify methods names into more appropriates ones" />
-    <option name="LAST_COMMIT_MESSAGE" value="modify methods names into more appropriates ones" />
+    <MESSAGE value="add method and test for 2 hours" />
+    <MESSAGE value="add method and test for 3 hours" />
+    <MESSAGE value="add method and test for 4 hours" />
+    <MESSAGE value="add method and test for 5 hours" />
+    <MESSAGE value="add method and test for 6 hours" />
+    <MESSAGE value="add method and test for 8 hours" />
+    <MESSAGE value="add method and test for 9 hours" />
+    <MESSAGE value="add method and test for 10 hours" />
+    <MESSAGE value="modify specified method into generic method 2 (hour handling)" />
+    <MESSAGE value="refactoring method for better code visibility 3" />
+    <MESSAGE value="add method &quot;5 by 5&quot; for input 5 (hour handling)" />
+    <MESSAGE value="add method &quot;5 by 5&quot; for input 10 (hour handling)" />
+    <MESSAGE value="add method &quot;5 by 5&quot; for input 15 (hour handling)" />
+    <MESSAGE value="add method &quot;5 by 5&quot; for input 20 (hour handling)" />
+    <MESSAGE value="modify specified method into generic method 3 (5 by 5 hours handling)" />
+    <option name="LAST_COMMIT_MESSAGE" value="modify specified method into generic method 3 (5 by 5 hours handling)" />
   </component>
   <component name="WindowStateProjectService">
     <state x="475" y="74" key="#PHP" timestamp="1603619267263">
@@ -380,38 +501,38 @@
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="223" y="48" width="1089" height="776" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1536.824@0.0.1536.824" timestamp="1603631934175" />
-    <state x="262" y="0" key="CommitChangelistDialog2" timestamp="1603638213011">
+    <state x="229" y="0" key="CommitChangelistDialog2" timestamp="1603640575834">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="262" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603638213011" />
+    <state x="229" y="0" key="CommitChangelistDialog2/0.0.1536.824@0.0.1536.824" timestamp="1603640575834" />
     <state x="549" y="153" key="FileChooserDialogImpl" timestamp="1603629315294">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="549" y="153" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1603629315294" />
-    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1603638158683">
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom" timestamp="1603640719570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603638158683" />
-    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1603638158683">
+    <state width="1493" height="231" key="GridCell.Tab.0.bottom/0.0.1536.824@0.0.1536.824" timestamp="1603640719570" />
+    <state width="1493" height="231" key="GridCell.Tab.0.center" timestamp="1603640719570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603638158683" />
-    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1603638158683">
+    <state width="1493" height="231" key="GridCell.Tab.0.center/0.0.1536.824@0.0.1536.824" timestamp="1603640719570" />
+    <state width="1493" height="231" key="GridCell.Tab.0.left" timestamp="1603640719570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603638158683" />
-    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1603638158683">
+    <state width="1493" height="231" key="GridCell.Tab.0.left/0.0.1536.824@0.0.1536.824" timestamp="1603640719570" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right" timestamp="1603640719570">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603638158683" />
+    <state width="1493" height="231" key="GridCell.Tab.0.right/0.0.1536.824@0.0.1536.824" timestamp="1603640719570" />
     <state x="604" y="335" key="NewPhpFileDialog" timestamp="1603533486895">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
     <state x="604" y="335" key="NewPhpFileDialog/0.0.1536.824@0.0.1536.824" timestamp="1603533486895" />
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603638216315">
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2" timestamp="1603640578676">
       <screen x="0" y="0" width="1536" height="824" />
     </state>
-    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603638216315" />
+    <state x="361" y="145" key="Vcs.Push.Dialog.v2/0.0.1536.824@0.0.1536.824" timestamp="1603640578676" />
     <state x="586" y="326" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1603630619493">
       <screen x="0" y="0" width="1536" height="824" />
     </state>

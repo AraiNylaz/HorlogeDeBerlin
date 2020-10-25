@@ -62,4 +62,5 @@ class HorlogeDeBerlin
         }
         return $stringToReturn;
     }
+
 }
