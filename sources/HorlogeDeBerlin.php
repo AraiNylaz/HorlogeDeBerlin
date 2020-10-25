@@ -13,7 +13,6 @@ $hoursModulo5 = $hours % 5;
 $hourDividedBy5 = $hours / 5;
 
 
-
 class HorlogeDeBerlin
 {
 
@@ -27,16 +26,17 @@ class HorlogeDeBerlin
     public function display_simple_minutes($minute): string
     {
         $stringToReturn = "";
-         for ($index = 0; $index < $minute%5; $index++){
-              $stringToReturn = $stringToReturn."[".$this->arraySimpleMinutes[$index]."]";
-         }
+        for ($index = 0; $index < $minute % 5; $index++) {
+            $stringToReturn = $stringToReturn . "[" . $this->arraySimpleMinutes[$index] . "]";
+        }
         return $stringToReturn;
     }
+
     public function display_5_by_5_minutes($minute): string
     {
         if ($minute === 5) return "[" . $this->array5Minutes[0] . "]";
-        if ($minute === 10) return "[" . $this->array5Minutes[0] . "]"."[" . $this->array5Minutes[1] . "]";
-
+        if ($minute === 10) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]";
+        if ($minute === 15) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]";
 
 
     }
