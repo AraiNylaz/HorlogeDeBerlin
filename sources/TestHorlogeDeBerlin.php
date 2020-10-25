@@ -383,33 +383,7 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("[5hours]", $actual);
     }
-    public function test_display_given0Seconds_shouldReturn_ON()
-    {
-        //arrange
 
-        //act
-        $actual = $this->horlogeDeBerlin->display_seconds(0);
-        //assert
-        $this->assertEquals("ON", $actual);
-    }
-    public function test_display_given1Seconds_shouldReturn_OFF()
-    {
-        //arrange
-
-        //act
-        $actual = $this->horlogeDeBerlin->display_seconds(1);
-        //assert
-        $this->assertEquals("OFF", $actual);
-    }
-    public function test_display_given2Seconds_shouldReturn_ON()
-    {
-        //arrange
-
-        //act
-        $actual = $this->horlogeDeBerlin->display_seconds(2);
-        //assert
-        $this->assertEquals("ON", $actual);
-    }
 
     public function test_display_given10Hours_shouldReturn_first_2_indexes()
     {
@@ -430,6 +404,7 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("[5hours][10hours][15hours]", $actual);
     }
+
     public function test_display_given20Hours_shouldReturn_all_indexes()
     {
         //arrange
@@ -444,4 +419,44 @@ class TestHorlogeDeBerlin extends TestCase
     {
         return $this->horlogeDeBerlin->display_5_by_5_hours($hours);
     }
+
+    public function test_display_given0Seconds_shouldReturn_ON()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_seconds(0);
+        //assert
+        $this->assertEquals("ON", $actual);
+    }
+
+    public function test_display_given1Seconds_shouldReturn_OFF()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_seconds(1);
+        //assert
+        $this->assertEquals("OFF", $actual);
+    }
+
+    public function test_display_given2Seconds_shouldReturn_ON()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_seconds(2);
+        //assert
+        $this->assertEquals("ON", $actual);
+    }
+    public function test_display_given3Seconds_shouldReturn_OFF()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_seconds(3);
+        //assert
+        $this->assertEquals("OFF", $actual);
+    }
+
 }
