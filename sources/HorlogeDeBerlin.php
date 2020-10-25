@@ -18,6 +18,8 @@ class HorlogeDeBerlin
 
     public $arraySimpleMinutes = array("1st Minute", "2nd Minute", "3rd Minute", "4th Minute");
     public $array5Minutes = array("5min", "10min", "15MIN", "20min", "25min", "30MIN", "35min", "40min", "45MIN", "50min", "55min");
+    public $arraySimpleHours = array("1st hour", "2nd hour", "3rd hour", "4th hour");
+    public $array5Hours = array("5hours", "10hours", "15hours", "20hours");
 
     public function __construct()
     {
@@ -39,5 +41,9 @@ class HorlogeDeBerlin
             $stringToReturn = $stringToReturn . "[" . $this->array5Minutes[$index] . "]";
         }
         return $stringToReturn;
+    }
+    public function display_simple_hours($hours): string
+    {
+        if($hours === 1) return "[".$this->array5Hours[0]."]";
     }
 }

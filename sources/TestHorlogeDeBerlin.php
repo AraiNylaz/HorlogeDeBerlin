@@ -233,4 +233,14 @@ class TestHorlogeDeBerlin extends TestCase
     private function display_generic_5_by_5_minutes($minutes): string {
         return $this->horlogeDeBerlin->display_5_by_5_minutes($minutes);
     }
+
+    public function test_display_given1_shouldReturn_1Hour()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_simple_hours(1);
+        //assert
+        $this->assertEquals("[1st hour]",$actual);
+    }
 }
