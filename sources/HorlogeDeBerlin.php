@@ -44,6 +44,6 @@ class HorlogeDeBerlin
     }
     public function display_simple_hours($hours): string
     {
-        if($hours === 1) return "[".$this->array5Hours[0]."]";
+        if($hours === 1) return "[".$this->arraySimpleHours[0]."]";
     }
 }
