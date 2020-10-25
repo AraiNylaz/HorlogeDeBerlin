@@ -234,7 +234,7 @@ class TestHorlogeDeBerlin extends TestCase
         return $this->horlogeDeBerlin->display_5_by_5_minutes($minutes);
     }
 
-    public function test_display_given1Hour_shouldReturn_1Hour()
+    public function test_display_given1Hour_shouldReturn_1_hour()
     {
         //arrange
 
@@ -242,5 +242,14 @@ class TestHorlogeDeBerlin extends TestCase
         $actual = $this->horlogeDeBerlin->display_simple_hours(1);
         //assert
         $this->assertEquals("[1st hour]",$actual);
+    }
+    public function test_display_given2Hours_shouldReturn_2_hours()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_simple_hours(2);
+        //assert
+        $this->assertEquals("[1st hour][2nd hour]",$actual);
     }
 }

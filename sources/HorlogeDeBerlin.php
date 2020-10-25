@@ -37,13 +37,15 @@ class HorlogeDeBerlin
     public function display_5_by_5_minutes($minute): string
     {
         $stringToReturn = "";
-        for ($index = 0; $index < floor($minute/5); $index++) {
+        for ($index = 0; $index < floor($minute / 5); $index++) {
             $stringToReturn = $stringToReturn . "[" . $this->array5Minutes[$index] . "]";
         }
         return $stringToReturn;
     }
+
     public function display_simple_hours($hours): string
     {
-        if($hours === 1) return "[".$this->arraySimpleHours[0]."]";
+        if ($hours === 1) return "[" . $this->arraySimpleHours[0] . "]";
+        if ($hours === 2) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]";
     }
 }
