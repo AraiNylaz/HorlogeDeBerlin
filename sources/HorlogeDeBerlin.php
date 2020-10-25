@@ -64,10 +64,8 @@ class HorlogeDeBerlin
     }
     public function display_seconds($seconds): string
     {
-        if($seconds === 0) return "ON";
-        if($seconds === 1) return "OFF";
-        if($seconds === 2) return "ON";
-        if($seconds === 3) return "OFF";
+        if($seconds%2 === 0)return "ON";
+        return "OFF";
     }
 
 }
