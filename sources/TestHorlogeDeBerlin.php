@@ -88,7 +88,15 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("[1st Minute][2nd Minute][3rd Minute]",$actual);
     }
+    public function test_display_given9_shouldReturn4()
+    {
+        //arrange
 
+        //act
+        $actual = $this->horlogeDeBerlin->display_simple_minutes(9);
+        //assert
+        $this->assertEquals("[1st Minute][2nd Minute][3rd Minute][4th Minute]",$actual);
+    }
 
 
 }
