@@ -392,6 +392,15 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("ON", $actual);
     }
+    public function test_display_given1Seconds_shouldReturn_OFF()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_seconds(1);
+        //assert
+        $this->assertEquals("OFF", $actual);
+    }
 
     public function test_display_given10Hours_shouldReturn_first_2_indexes()
     {
