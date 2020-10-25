@@ -193,7 +193,7 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min][40min]",$actual);
     }
-    public function test_display_given5_shouldReturn9()
+    public function test_display_given45_shouldReturn9()
     {
         //arrange
 
@@ -201,5 +201,14 @@ class TestHorlogeDeBerlin extends TestCase
         $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(45);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min][40min][45MIN]",$actual);
+    }
+    public function test_display_given50_shouldReturn10()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(50);
+        //assert
+        $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min][40min][45MIN][50min]",$actual);
     }
 }
