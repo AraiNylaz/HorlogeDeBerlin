@@ -6,7 +6,7 @@ $hours = $date->format('H');
 $minutes = $date->format('i');
 $seconds = $date->format('s');
 
-$minuteModulo5 = $minutes % 5;
+//$minuteModulo5 = $minutes % 5;
 $minuteDividedBy5 = $minutes / 5;
 
 $hoursModulo5 = $hours % 5;
@@ -24,17 +24,10 @@ class HorlogeDeBerlin
 
     public function display_simple_minutes($minute): string
     {
-        if ($minute === 1) return "[" . $this->arraySimpleMinutes[0] . "]";
-        if ($minute === 2) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]";
-        if ($minute === 3) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]" . "[" . $this->arraySimpleMinutes[2] . "]";
-        if ($minute === 4) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]" . "[" . $this->arraySimpleMinutes[2] . "]" . "[" . $this->arraySimpleMinutes[3] . "]";
-        if ($minute === 5) return "";
-        if ($minute === 6) return "[" . $this->arraySimpleMinutes[0] . "]";
-        if ($minute === 7) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]";
-        if ($minute === 8) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]" . "[" . $this->arraySimpleMinutes[2] . "]";
-        if ($minute === 9) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]" . "[" . $this->arraySimpleMinutes[2] . "]" . "[" . $this->arraySimpleMinutes[3] . "]";
-        if ($minute === 10) return "";
-
-
+        $stringToReturn = "";
+         for ($index = 0; $index < $minute%5; $index++){
+              $stringToReturn = $stringToReturn."[".$this->arraySimpleMinutes[$index]."]";
+         }
+        return $stringToReturn;
     }
 }
