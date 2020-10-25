@@ -425,7 +425,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_seconds(0);
+        $actual = $this->display_generic_seconds(0);
         //assert
         $this->assertEquals("ON", $actual);
     }
@@ -435,7 +435,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_seconds(1);
+        $actual = $this->display_generic_seconds(1);
         //assert
         $this->assertEquals("OFF", $actual);
     }
@@ -445,7 +445,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_seconds(2);
+        $actual = $this->display_generic_seconds(2);
         //assert
         $this->assertEquals("ON", $actual);
     }
@@ -454,9 +454,13 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_seconds(3);
+        $actual = $this->display_generic_seconds(3);
         //assert
         $this->assertEquals("OFF", $actual);
+    }
+    private function display_generic_seconds($seconds): string
+    {
+        return $this->horlogeDeBerlin->display_seconds($seconds);
     }
 
 }
