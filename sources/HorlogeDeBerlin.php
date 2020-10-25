@@ -42,6 +42,7 @@ class HorlogeDeBerlin
         if ($minute === 30) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]";
         if ($minute === 35) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]";
         if ($minute === 40) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]" . "[" . $this->array5Minutes[7] . "]";
+        if ($minute === 45) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]" . "[" . $this->array5Minutes[7] . "]" . "[" . $this->array5Minutes[8] . "]";
 
     }
 }
