@@ -125,7 +125,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(5);
+        $actual = $this->display_generic_5_by_5_minutes(5);
         //assert
         $this->assertEquals("[5min]",$actual);
     }
@@ -135,7 +135,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(10);
+        $actual = $this->display_generic_5_by_5_minutes(10);
         //assert
         $this->assertEquals("[5min][10min]",$actual);
     }
@@ -144,7 +144,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(15);
+        $actual = $this->display_generic_5_by_5_minutes(15);
         //assert
         $this->assertEquals("[5min][10min][15MIN]",$actual);
     }
@@ -153,7 +153,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(20);
+        $actual = $this->display_generic_5_by_5_minutes(20);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min]",$actual);
     }
@@ -162,7 +162,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(25);
+        $actual = $this->display_generic_5_by_5_minutes(25);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min]",$actual);
     }
@@ -171,7 +171,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(30);
+        $actual = $this->display_generic_5_by_5_minutes(30);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN]",$actual);
     }
@@ -180,7 +180,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(35);
+        $actual = $this->display_generic_5_by_5_minutes(35);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min]",$actual);
     }
@@ -189,7 +189,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(40);
+        $actual = $this->display_generic_5_by_5_minutes(40);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min][40min]",$actual);
     }
@@ -198,7 +198,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(45);
+        $actual = $this->display_generic_5_by_5_minutes(45);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min][40min][45MIN]",$actual);
     }
@@ -207,7 +207,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(50);
+        $actual = $this->display_generic_5_by_5_minutes(50);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min][40min][45MIN][50min]",$actual);
     }
@@ -216,7 +216,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(55);
+        $actual = $this->display_generic_5_by_5_minutes(55);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min][25min][30MIN][35min][40min][45MIN][50min][55min]",$actual);
     }
@@ -225,8 +225,12 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(0);
+        $actual = $this->display_generic_5_by_5_minutes(0);
         //assert
         $this->assertEquals("",$actual);
+    }
+
+    private function display_generic_5_by_5_minutes($minutes): string {
+        return $this->horlogeDeBerlin->display_5_by_5_minutes($minutes);
     }
 }
