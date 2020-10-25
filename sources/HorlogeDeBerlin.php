@@ -33,7 +33,7 @@ class HorlogeDeBerlin
         if ($minute === 7) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]";
         if ($minute === 8) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]" . "[" . $this->arraySimpleMinutes[2] . "]";
         if ($minute === 9) return "[" . $this->arraySimpleMinutes[0] . "]" . "[" . $this->arraySimpleMinutes[1] . "]" . "[" . $this->arraySimpleMinutes[2] . "]" . "[" . $this->arraySimpleMinutes[3] . "]";
-
+        if ($minute === 10) return "";
 
 
     }
