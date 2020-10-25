@@ -62,5 +62,9 @@ class HorlogeDeBerlin
         }
         return $stringToReturn;
     }
+    public function display_seconds($seconds): string
+    {
+        if($seconds === 0) return "ON";
+    }
 
 }
