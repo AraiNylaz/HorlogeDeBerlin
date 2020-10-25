@@ -14,12 +14,13 @@ $hourDividedBy5 = $hours/5;
 
 class HorlogeDeBerlin{
 
-    public $arraySimpleMinutes = array("1st Minute","2sd Minute","3rd Minute","4th Minute");
+    public $arraySimpleMinutes = array("1st Minute","2nd Minute","3rd Minute","4th Minute");
     public $array5Minutes = array("5min", "10min", "15MIN", "20min", "25min", "30MIN", "35min", "40min", "45MIN", "50min", "55min");
     public function __construct(){}
 
     public function display_simple_minutes($minute): string{
         if($minute === 1) return "[".$this->arraySimpleMinutes[0]."]";
+        if($minute === 2) return "[".$this->arraySimpleMinutes[0]."]"."[".$this->arraySimpleMinutes[1]."]";
 
     }
 }
