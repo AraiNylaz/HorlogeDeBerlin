@@ -45,17 +45,11 @@ class HorlogeDeBerlin
 
     public function display_simple_hours($hours): string
     {
-        if ($hours === 1) return "[" . $this->arraySimpleHours[0] . "]";
-        if ($hours === 2) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]";
-        if ($hours === 3) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]" . "[" . $this->arraySimpleHours[2] . "]";
-        if ($hours === 4) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]" . "[" . $this->arraySimpleHours[2] . "]" . "[" . $this->arraySimpleHours[3] . "]";
-        if ($hours === 5) return "";
-        if ($hours === 6) return "[" . $this->arraySimpleHours[0] . "]";
-        if ($hours === 7) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]";
-        if ($hours === 8) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]" . "[" . $this->arraySimpleHours[2] . "]";
-        if ($hours === 9) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]" . "[" . $this->arraySimpleHours[2] . "]" . "[" . $this->arraySimpleHours[3] . "]";
-        if ($hours === 10) return "";
-
+        $stringToReturn = "";
+        for ($index = 0; $index < $hours % 5; $index++) {
+            $stringToReturn = $stringToReturn . "[" . $this->arraySimpleHours[$index] . "]";
+        }
+        return $stringToReturn;
 
 
     }
