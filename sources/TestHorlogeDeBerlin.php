@@ -153,7 +153,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(15);
+        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(20);
         //assert
         $this->assertEquals("[5min][10min][15MIN][20min]",$actual);
     }
