@@ -252,4 +252,13 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("[1st hour][2nd hour]",$actual);
     }
+    public function test_display_given3Hours_shouldReturn_3_hours()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_simple_hours(3);
+        //assert
+        $this->assertEquals("[1st hour][2nd hour][3rd hour]",$actual);
+    }
 }

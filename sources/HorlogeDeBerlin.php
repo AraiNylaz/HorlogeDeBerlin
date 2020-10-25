@@ -47,5 +47,6 @@ class HorlogeDeBerlin
     {
         if ($hours === 1) return "[" . $this->arraySimpleHours[0] . "]";
         if ($hours === 2) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]";
+        if ($hours === 3) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]" . "[" . $this->arraySimpleHours[2] . "]";
     }
 }
