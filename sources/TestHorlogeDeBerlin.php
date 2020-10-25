@@ -130,6 +130,14 @@ class TestHorlogeDeBerlin extends TestCase
         $this->assertEquals("[5min]",$actual);
     }
 
+    public function test_display_given10_shouldReturn2()
+    {
+        //arrange
 
+        //act
+        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(10);
+        //assert
+        $this->assertEquals("[5min][10min]",$actual);
+    }
 
 }
