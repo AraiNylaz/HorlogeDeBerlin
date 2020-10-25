@@ -9,6 +9,13 @@ require "HorlogeDeBerlin.php";
 
 use PHPUnit\Framework\TestCase;
 
+date_default_timezone_set('Europe/Berlin');
+$time = date("H:i:s");
+$date = new \DateTime();
+$hours = $date->format('H');
+$minutes = $date->format('i');
+$seconds = $date->format('s');
+
 class TestHorlogeDeBerlin extends TestCase
 {
     private $horlogeDeBerlin;
@@ -449,6 +456,7 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("ON", $actual);
     }
+
     public function test_display_given3Seconds_shouldReturn_OFF()
     {
         //arrange
@@ -458,9 +466,18 @@ class TestHorlogeDeBerlin extends TestCase
         //assert
         $this->assertEquals("OFF", $actual);
     }
+
     private function display_generic_seconds($seconds): string
     {
         return $this->horlogeDeBerlin->display_seconds($seconds);
+    }
+
+    public function display_entire_clock($hours, $minutes, $seconds): string
+    {
+        $stringToReturn = $this->display_generic_seconds($seconds) . "\r" . $this->display_generic_5_by_5_hours() . "\r" . $this->display_generic_hours() . "\r" . $this->display_generic_5_by_5_minutes() . "\r" . $this->display_generic_minutes();
+        echo $stringToReturn;
+        var_dump($stringToReturn);
+        return $stringToReturn;
     }
 
 }

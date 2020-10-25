@@ -1,18 +1,4 @@
 <?php
-date_default_timezone_set('Europe/Berlin');
-$time = date("H:i:s");
-$date = new \DateTime();
-$hours = $date->format('H');
-$minutes = $date->format('i');
-$seconds = $date->format('s');
-
-//$minuteModulo5 = $minutes % 5;
-$minuteDividedBy5 = $minutes / 5;
-
-$hoursModulo5 = $hours % 5;
-$hourDividedBy5 = $hours / 5;
-
-
 class HorlogeDeBerlin
 {
 
