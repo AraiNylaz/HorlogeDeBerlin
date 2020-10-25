@@ -120,5 +120,16 @@ class TestHorlogeDeBerlin extends TestCase
         return $this->horlogeDeBerlin->display_simple_minutes($minutes);
     }
 
+    public function test_display_given5_shouldReturn1()
+    {
+        //arrange
+
+        //act
+        $actual = $this->horlogeDeBerlin->display_5_by_5_minutes(5);
+        //assert
+        $this->assertEquals("[5min]",$actual);
+    }
+
+
 
 }

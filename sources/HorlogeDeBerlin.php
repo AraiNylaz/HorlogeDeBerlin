@@ -35,5 +35,8 @@ class HorlogeDeBerlin
     public function display_5_by_5_minutes($minute): string
     {
         if ($minute === 5) return "[" . $this->array5Minutes[0] . "]";
+
+
+
     }
 }
