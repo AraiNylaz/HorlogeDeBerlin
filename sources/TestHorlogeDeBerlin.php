@@ -21,7 +21,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(1);
+        $actual = $this->display_generic_minutes(1);
         //assert
         $this->assertEquals("[1st Minute]",$actual);
     }
@@ -30,7 +30,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(2);
+        $actual = $this->display_generic_minutes(2);
         //assert
         $this->assertEquals("[1st Minute][2nd Minute]",$actual);
     }
@@ -39,7 +39,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(3);
+        $actual = $this->display_generic_minutes(3);
         //assert
         $this->assertEquals("[1st Minute][2nd Minute][3rd Minute]",$actual);
     }
@@ -48,7 +48,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(4);
+        $actual = $this->display_generic_minutes(4);
         //assert
         $this->assertEquals("[1st Minute][2nd Minute][3rd Minute][4th Minute]",$actual);
     }
@@ -57,7 +57,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(5);
+        $actual = $this->display_generic_minutes(5);
         //assert
         $this->assertEquals("",$actual);
     }
@@ -66,7 +66,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(6);
+        $actual = $this->display_generic_minutes(6);
         //assert
         $this->assertEquals("[1st Minute]",$actual);
     }
@@ -75,7 +75,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(7);
+        $actual = $this->display_generic_minutes(7);
         //assert
         $this->assertEquals("[1st Minute][2nd Minute]",$actual);
     }
@@ -84,7 +84,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(8);
+        $actual = $this->display_generic_minutes(8);
         //assert
         $this->assertEquals("[1st Minute][2nd Minute][3rd Minute]",$actual);
     }
@@ -93,7 +93,7 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(9);
+        $actual = $this->display_generic_minutes(9);
         //assert
         $this->assertEquals("[1st Minute][2nd Minute][3rd Minute][4th Minute]",$actual);
     }
@@ -102,7 +102,7 @@ class TestHorlogeDeBerlin extends TestCase
     //arrange
 
     //act
-    $actual = $this->horlogeDeBerlin->display_simple_minutes(10);
+    $actual = $this->display_generic_minutes(10);
     //assert
     $this->assertEquals("",$actual);
 }
@@ -111,9 +111,14 @@ class TestHorlogeDeBerlin extends TestCase
         //arrange
 
         //act
-        $actual = $this->horlogeDeBerlin->display_simple_minutes(11);
+        $actual = $this->display_generic_minutes(11);
         //assert
         $this->assertEquals("[1st Minute]",$actual);
     }
+
+    private function display_generic_minutes($minutes): string {
+        return $this->horlogeDeBerlin->display_simple_minutes($minutes);
+    }
+
 
 }
