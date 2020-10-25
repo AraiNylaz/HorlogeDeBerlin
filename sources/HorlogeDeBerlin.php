@@ -53,8 +53,10 @@ class HorlogeDeBerlin
 
 
     }
+
     public function display_5_by_5_hours($hours): string
     {
-        if($hours === 0) return "";
+        if ($hours === 0) return "";
+        if ($hours === 5) return "[" . $this->array5Hours[0] . "]";
     }
 }
