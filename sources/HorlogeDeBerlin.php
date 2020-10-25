@@ -51,6 +51,10 @@ class HorlogeDeBerlin
         if ($hours === 4) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]" . "[" . $this->arraySimpleHours[2] . "]" . "[" . $this->arraySimpleHours[3] . "]";
         if ($hours === 5) return "";
         if ($hours === 6) return "[" . $this->arraySimpleHours[0] . "]";
+        if ($hours === 7) return "[" . $this->arraySimpleHours[0] . "]" . "[" . $this->arraySimpleHours[1] . "]";
+
+
+
 
     }
 }
