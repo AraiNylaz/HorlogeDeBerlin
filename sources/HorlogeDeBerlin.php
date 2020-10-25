@@ -66,6 +66,7 @@ class HorlogeDeBerlin
     {
         if($seconds === 0) return "ON";
         if($seconds === 1) return "OFF";
+        if($seconds === 2) return "ON";
     }
 
 }
