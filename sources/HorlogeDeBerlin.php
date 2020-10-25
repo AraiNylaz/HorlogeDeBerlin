@@ -34,17 +34,10 @@ class HorlogeDeBerlin
 
     public function display_5_by_5_minutes($minute): string
     {
-        if ($minute === 5) return "[" . $this->array5Minutes[0] . "]";
-        if ($minute === 10) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]";
-        if ($minute === 15) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]";
-        if ($minute === 20) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]";
-        if ($minute === 25) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]";
-        if ($minute === 30) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]";
-        if ($minute === 35) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]";
-        if ($minute === 40) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]" . "[" . $this->array5Minutes[7] . "]";
-        if ($minute === 45) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]" . "[" . $this->array5Minutes[7] . "]" . "[" . $this->array5Minutes[8] . "]";
-        if ($minute === 50) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]" . "[" . $this->array5Minutes[7] . "]" . "[" . $this->array5Minutes[8] . "]" . "[" . $this->array5Minutes[9] . "]";
-        if ($minute === 55) return "[" . $this->array5Minutes[0] . "]" . "[" . $this->array5Minutes[1] . "]" . "[" . $this->array5Minutes[2] . "]" . "[" . $this->array5Minutes[3] . "]" . "[" . $this->array5Minutes[4] . "]" . "[" . $this->array5Minutes[5] . "]" . "[" . $this->array5Minutes[6] . "]" . "[" . $this->array5Minutes[7] . "]" . "[" . $this->array5Minutes[8] . "]" . "[" . $this->array5Minutes[9] . "]" . "[" . $this->array5Minutes[10] . "]";
-        if ($minute === 0) return "";
+        $stringToReturn = "";
+        for ($index = 0; $index < floor($minute/5); $index++) {
+            $stringToReturn = $stringToReturn . "[" . $this->array5Minutes[$index] . "]";
+        }
+        return $stringToReturn;
     }
 }
