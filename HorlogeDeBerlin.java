@@ -16,7 +16,8 @@ public class HorlogeDeBerlin {
 	private int minutesDivisePar5 = date.getMinute()/5;
 	private int heuresModulo5 = date.getHour()%5;
 	private int heuresDivisePar5 = date.getHour()/5;
-
+	private int secondes = date.getSecond();
+	
 	public HorlogeDeBerlin() {
 	}
 
@@ -45,7 +46,6 @@ public class HorlogeDeBerlin {
 	}
 
 	public void afficherSecondes() {
-		int secondes = date.getSecond();
 		String string = secondes % 2 == 0 ? "on" : "off";
 		System.out.println("secondes : " + string);
 	}
@@ -54,7 +54,7 @@ public class HorlogeDeBerlin {
 		HorlogeDeBerlin horloge = new HorlogeDeBerlin();
 		LocalDateTime date = LocalDateTime.now();
 		System.out.println("Heure testée  ::  "+date.getHour() + ":" + date.getMinute() + ":" + date.getSecond());
-		
+		System.out.println();
 		horloge.afficherSecondes();
 		horloge.afficherHeures();
 		horloge.afficherMinutes();
