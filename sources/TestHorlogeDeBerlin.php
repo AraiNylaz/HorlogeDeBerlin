@@ -1,9 +1,6 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: lorine
- * Date: 13-10-20
- * Time: 18:11
+ * Author : ETIENNE Lorine and PRONCE Alexandre  (2I2) 
  */
 require "HorlogeDeBerlin.php";
 
