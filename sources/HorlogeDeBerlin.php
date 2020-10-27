@@ -1,7 +1,10 @@
 <?php
+/**
+ * Author : ETIENNE Lorine and PRONCE Alexandre  (2I2) 
+ */
+
 class HorlogeDeBerlin
 {
-
     public $arraySimpleMinutes = array("1st Minute", "2nd Minute", "3rd Minute", "4th Minute");
     public $array5Minutes = array("5min", "10min", "15MIN", "20min", "25min", "30MIN", "35min", "40min", "45MIN", "50min", "55min");
     public $arraySimpleHours = array("1st hour", "2nd hour", "3rd hour", "4th hour");
@@ -48,10 +51,10 @@ class HorlogeDeBerlin
         }
         return $stringToReturn;
     }
+    
     public function display_seconds($seconds): string
     {
         if($seconds%2 === 0)return "ON";
         return "OFF";
     }
-
 }
