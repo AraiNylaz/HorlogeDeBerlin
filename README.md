@@ -38,6 +38,7 @@ pour ce qui est des 11 ampoules "5 minutes" (dont l'ampoule des 15, 30 et 45 min
 [5min][10min][15MIN][20min][25min][30MIN][35min][40min]
 
 j'espère que ces informations pu aider à la compréhension de notre code :)
-j'ai codé une version de l'horloge de berlin en java pour le fun (le code est loin d'être propre... désolé pour ça :/ ).
+
+j'ai codé une version de l'horloge de berlin en java pour le fun (le code est loin d'être propre... désolé pour ça :/ )
 
 Merci et bonne lecture ! :) 
