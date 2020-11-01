@@ -57,4 +57,12 @@ class HorlogeDeBerlin
         if($seconds%2 === 0)return "ON";
         return "OFF";
     }
+    
+    public function display_clock($hours, $minutes, $seconds): string
+    {
+            $stringToReturn = $this->display_seconds($seconds) . "\r" . $this->display_5_by_5_hours($hours) 
+            . "\r" . $this->display_simple_hours($hours) . "\r" . $this->display_5_by_5_minutes($minutes) 
+            . "\r" . $this->display_simple_minutes($minutes);
+        return $stringToReturn;
+    }
 }

@@ -345,8 +345,9 @@ class TestHorlogeDeBerlin extends TestCase
 
     public function display_entire_clock($hours, $minutes, $seconds): string
     {
-        $stringToReturn = $this->display_generic_seconds($seconds) . "\r" . $this->display_generic_5_by_5_hours($hours) . "\r" . $this->display_generic_hours($hours) . "\r" . $this->display_generic_5_by_5_minutes($minutes) . "\r" . $this->display_generic_minutes($minutes);
-        return $stringToReturn;
+        $string = $this->horlogeDeBerlin->display_entire_clock($hours, $minutes, $seconds);
+        echo $string;
+        return $string;
     }
 
 }
