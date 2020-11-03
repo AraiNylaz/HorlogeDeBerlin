@@ -36,8 +36,9 @@ OFF  --> 3 secondes, c'est impair donc ampoule éteinte.
 pour ce qui est des 11 ampoules "5 minutes" (dont l'ampoule des 15, 30 et 45 minutes sont rouges) nous avons représenté cette "différence de couleur" par des majuscules dans les tableaux : 
 
 [5min][10min][15MIN][20min][25min][30MIN][35min][40min]
-#### implémentation des test unitaire 
-
+#### implémentation des tests unitaire 
+Pour l'implémentation des tests unitiare , nous avons d'abbord commencé par tester les mintutes simples une par une jusqu'a la 11em mintue et enssuite nous avons fait le test générique afin de tester toute les minutes simples.
+ nous avonc procéder de la meme façon pour implémenter les autres tests , en commançant par tester un par un les résultats renvoyé par le méthode et ensuite en implémantant le test générique de celle-ci
 
 j'espère que ces informations ont pu aider à la compréhension de notre code :)
 
