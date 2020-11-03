@@ -36,6 +36,8 @@ OFF  --> 3 secondes, c'est impair donc ampoule éteinte.
 pour ce qui est des 11 ampoules "5 minutes" (dont l'ampoule des 15, 30 et 45 minutes sont rouges) nous avons représenté cette "différence de couleur" par des majuscules dans les tableaux : 
 
 [5min][10min][15MIN][20min][25min][30MIN][35min][40min]
+#### implémentation des test unitaire 
+
 
 j'espère que ces informations ont pu aider à la compréhension de notre code :)
 
