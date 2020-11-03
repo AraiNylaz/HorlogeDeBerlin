@@ -42,3 +42,4 @@ j'espère que ces informations ont pu aider à la compréhension de notre code :
 j'ai codé une version de l'horloge de berlin en java pour le fun (le code est loin d'être propre... désolé pour ça :/ )
 
 Merci et bonne lecture ! :) 
+ETIENNE Lorine et PRONCE Alexandre
