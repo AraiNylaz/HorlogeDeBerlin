@@ -36,13 +36,16 @@ OFF  --> 3 secondes, c'est impair donc ampoule éteinte.
 pour ce qui est des 11 ampoules "5 minutes" (dont l'ampoule des 15, 30 et 45 minutes sont rouges) nous avons représenté cette "différence de couleur" par des majuscules dans les tableaux : 
 
 [5min][10min][15MIN][20min][25min][30MIN][35min][40min]
-#### implémentation des tests unitaire 
-Pour l'implémentation des tests unitiare , nous avons d'abbord commencé par tester les mintutes simples une par une jusqu'a la 11em mintue et enssuite nous avons fait le test générique afin de tester toute les minutes simples.
- nous avonc procéder de la meme façon pour implémenter les autres tests , en commançant par tester un par un les résultats renvoyé par le méthode et ensuite en implémantant le test générique de celle-ci
 
-j'espère que ces informations ont pu aider à la compréhension de notre code :)
+#### implémentation des tests unitaires (classe de test)  
+Pour l'implémentation des tests unitiares, nous avons d'abord commencé par tester les mintutes simples une par une jusqu'à la 10ième minute.  A chaque nouveau test, nous modifions la méthode testée afin qu'elle corresponde à ce nouveau test mais également aux précédents. A la fin du dixième test unitaire (pour les minutes simples), nous avons remarqué qu'il était possible de réfactorer cette méthode, de l'implémenter différemment de telle sorte qu'elle convienne pour tous les tests unitaire possibles.  Aussi bien pour les cas généraux que pour les cas particuliers.
+
+Nous avonc procédé de la même façon pour implémenter les autres méthodes, en commençant par tester un par un les résultats renvoyés par la méthode et ensuite en l'implémentant de manière plus générale.
+
+#### conclusion  
+j'espère que ces informations vous aideront à la compréhension de notre code :)
 
 j'ai codé une version de l'horloge de berlin en java pour le fun (le code est loin d'être propre... désolé pour ça :/ )
 
 Merci et bonne lecture ! :) 
-ETIENNE Lorine et PRONCE Alexandre
+ETIENNE Lorine et PRONCE Alexandre 2I2
